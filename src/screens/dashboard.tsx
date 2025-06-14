@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { Menu, Bell, Search, User, Home, BarChart3, PieChart, TrendingUp, Settings, Users } from 'lucide-react';
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
 
 // Add Highcharts to the Window type for TypeScript
 declare global {
@@ -164,7 +162,7 @@ window.Highcharts.chart(speedometerRef.current, {
     }
   }],
   credits: { enabled: false }
-}, function (chart) {
+}, function (chart: any) {
   // Animation
   if (!chart.series) return;
   
@@ -603,7 +601,7 @@ window.Highcharts.chart(speedometerRef.current, {
           <h1 style={styles.sidebarTitle}>Dashboard</h1>
         </div>
         <nav style={styles.nav}>
-          <div style={styles.navItems}>
+          <div style={styles.navItems as React.CSSProperties}>
             <a href="#" style={{...styles.navLink, ...styles.navLinkActive}}>
               <Home style={styles.navIcon} />
               Dashboard
@@ -646,7 +644,7 @@ window.Highcharts.chart(speedometerRef.current, {
             
             <div style={styles.headerRight}>
               <div style={styles.searchContainer}>
-                <Search style={styles.searchIcon} />
+                <Search style={styles.searchIcon as React.CSSProperties} />
                 <input
                   type="text"
                   placeholder="Search..."
@@ -827,7 +825,7 @@ const styles = {
   mainContent: {
     flex: 1,
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column' as React.CSSProperties['flexDirection']
   },
   header: {
     backgroundColor: '#ffffff',
@@ -869,7 +867,7 @@ const styles = {
     gap: '16px'
   },
   searchContainer: {
-    position: 'relative'
+    position: 'relative' as 'relative'
   },
   searchIcon: {
     position: 'absolute',
@@ -896,7 +894,7 @@ const styles = {
     border: 'none',
     borderRadius: '8px',
     cursor: 'pointer',
-    position: 'relative'
+    position: 'relative' as 'relative'
   },
   bellIcon: {
     width: '20px',
@@ -904,7 +902,7 @@ const styles = {
     color: '#4b5563'
   },
   notificationBadge: {
-    position: 'absolute',
+    position: 'absolute' as 'absolute',
     top: '-4px',
     right: '-4px',
     width: '12px',

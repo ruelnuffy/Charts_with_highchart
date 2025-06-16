@@ -11,7 +11,7 @@ import {
   Download,
 
   RefreshCw,
-} from "lucide-react";
+} from "lucide-react"
 import {
   XAxis,
   YAxis,
@@ -549,13 +549,13 @@ const SciChartSalesDashboard = () => {
         </div>
         <nav style={styles.nav}>
           <div style={styles.navItems}>
-            <a href="./dashboard">
+            <a href="./HighChartsDashboard">
             <div style={styles.navLink}>
               <Home style={styles.navIcon} />
               High Charts
             </div>
             </a>
-            <a href="./sciChart">
+            <a href="./SciChartSalesDashboard">
             <div style={{ ...styles.navLink, ...styles.navLinkActive }}>
               <BarChart3 style={styles.navIcon} />
               Sci Charts
@@ -567,7 +567,7 @@ const SciChartSalesDashboard = () => {
               Chart.js
             </div>
             </a>
-            <a href="./dthreecharrt">
+            <a href="./D3JSSalesDashboard">
             <div style={styles.navLink}>
               <TrendingUp style={styles.navIcon} />
               D3js Charts

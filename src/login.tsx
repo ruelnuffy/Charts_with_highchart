@@ -177,7 +177,7 @@ const handleSubmit = async (): Promise<void> => {
     await new Promise(resolve => setTimeout(resolve, 1500));
     
     // On successful authentication, navigate to dashboard
-    navigate('/screens/dashboard', {
+    navigate('/screens/HighChartsDashboard', {
   state: {
     userEmail: email,
     loginTime: new Date().toISOString()

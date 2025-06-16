@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const SalesDashboard = () => {
+const HighChartsDashboard = () => {
   const monthlySalesRef = useRef<HTMLDivElement>(null);
   const categoryBreakdownRef = useRef<HTMLDivElement>(null);
   const salesTrendRef = useRef<HTMLDivElement>(null);
@@ -496,11 +496,11 @@ const handleDownload = (type: string) => {
         </div>
         <nav style={styles.nav}>
           <div style={styles.navItems as React.CSSProperties}>
-                      <a href="./dashboard" style={{...styles.navLink, ...styles.navLinkActive}}>
+                      <a href="./HighChartsDashboard" style={{...styles.navLink, ...styles.navLinkActive}}>
                          <Home style={styles.navIcon} />
                          High Charts
                        </a>
-                       <a href="./sciChart" style={styles.navLink}>
+                       <a href="./SciChartSalesDashboard" style={styles.navLink}>
                          <BarChart3 style={styles.navIcon} />
                          Sci Charts
                        </a>
@@ -508,7 +508,7 @@ const handleDownload = (type: string) => {
                          <PieChart style={styles.navIcon} />
                          ChartJs
                        </a>
-                       <a href="./dthreecharrt" style={styles.navLink}>
+                       <a href="./D3JSSalesDashboard" style={styles.navLink}>
                          <TrendingUp style={styles.navIcon} />
                          D3js Charts
                        </a>
@@ -948,4 +948,4 @@ const styles = {
   }
 };
 
-export default SalesDashboard;
+export default HighChartsDashboard;

@@ -616,11 +616,11 @@ const D3JSSalesDashboard: React.FC = () => {
         </div>
         <nav style={styles.nav}>
           <div style={styles.navItems as React.CSSProperties}>
-            <a href="./dashboard" style={styles.navLink}>
+            <a href="./HighChartDashboard" style={styles.navLink}>
               <Home style={styles.navIcon} />
               High Charts
             </a>
-            <a href="./sciChart" style={styles.navLink}>
+            <a href="./SciChartSalesDashboard" style={styles.navLink}>
               <BarChart3 style={styles.navIcon} />
               Sci Charts
             </a>
@@ -628,7 +628,7 @@ const D3JSSalesDashboard: React.FC = () => {
               <PieChart style={styles.navIcon} />
               ChartJs
             </a>
-            <a href="./dthreecharrt" style={{ ...styles.navLink, ...styles.navLinkActive }}>
+            <a href="./D3JSSalesDashboard" style={{ ...styles.navLink, ...styles.navLinkActive }}>
               <TrendingUp style={styles.navIcon} />
               D3js Charts
             </a>
